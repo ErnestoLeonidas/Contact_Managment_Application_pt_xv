@@ -6,7 +6,7 @@ const getState = ({ getStore, getActions, setStore }) => {
             user: null,
             },
         actions: {
-            handleUsers: (id,index)=>{
+            handleUsers: (id,index=1)=>{
                 // const { users } = getStore();
                 // users.splice([index], 1);
                 // setStore({

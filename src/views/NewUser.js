@@ -44,19 +44,19 @@ const NewUser = () => {
                             <div className="card my-5">
                                 <div className="card-header">
                                     <h2 className="card-title">
-                                        Agregar Contacto
+                                        Add new contact
                                 </h2>
                                 </div>
                                 <div className="card-body">
                                     <div className="row">
                                         <div className="col-md-6">
                                             <div className="form-group">
-                                                <label htmlFor="name">Nombre</label>
+                                                <label htmlFor="name">Name</label>
                                                 <input
                                                     type="text"
                                                     id="name"
                                                     name="name"
-                                                    placeholder="Ingresar Nombre"
+                                                    placeholder="Enter name"
                                                     className="form-control mb-3"   
                                                     onChange={handleChangeEvent}
                                                />
@@ -64,12 +64,26 @@ const NewUser = () => {
                                         </div>
                                         <div className="col-md-6">
                                             <div className="form-group">
-                                                <label htmlFor="lastname">Apellido</label>
+                                                <label htmlFor="lastname">Last Name</label>
                                                 <input
                                                     type="text"
                                                     id="lastname"
                                                     name="lastname"
-                                                    placeholder="Ingresar Apellido"
+                                                    placeholder="Enter last name"
+                                                    className="form-control mb-3"
+                                                    onChange={handleChangeEvent}
+                                                />
+                                            </div>
+                                        </div>
+
+                                        <div className="col-md-12">
+                                            <div className="form-group">
+                                                <label htmlFor="email">Email</label>
+                                                <input
+                                                    type="text"
+                                                    id="email"
+                                                    name="email"
+                                                    placeholder="Enter Email"
                                                     className="form-control mb-3"
                                                     onChange={handleChangeEvent}
                                                 />
@@ -78,12 +92,26 @@ const NewUser = () => {
                                      
                                         <div className="col-md-12">
                                             <div className="form-group">
-                                                <label htmlFor="phone">Telefono</label>
+                                                <label htmlFor="phone">Phone</label>
                                                 <input
                                                     type="text"
                                                     id="phone"
                                                     name="phone"
-                                                    placeholder="Ingresar Telefono"
+                                                    placeholder="Enter phone"
+                                                    className="form-control mb-3"
+                                                    onChange={handleChangeEvent}
+                                                />
+                                            </div>
+                                        </div>
+
+                                        <div className="col-md-12">
+                                            <div className="form-group">
+                                                <label htmlFor="adress">Address</label>
+                                                <input
+                                                    type="text"
+                                                    id="adress"
+                                                    name="adress"
+                                                    placeholder="Enter adress"
                                                     className="form-control mb-3"
                                                     onChange={handleChangeEvent}
                                                 />
@@ -92,8 +120,8 @@ const NewUser = () => {
                                     </div>
                                 </div>
                                 <div className="card-footer d-flex justify-content-end">
-                                    <button className="btn btn-success mx-1">Guardar</button>
-                                    <button className="btn btn-warning mx-1" onClick={() => history.push('/')}>Regresar</button>
+                                    <button className="btn btn-success mx-1">Save</button>
+                                    <button className="btn btn-warning mx-1" onClick={() => history.push('/')}>Go back!</button>
                                 </div>
                             </div>
                         </form>

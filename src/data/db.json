@@ -4,7 +4,25 @@
       "id": 1,
       "name": "Ernesto",
       "lastname": "Velasquez",
-      "phone": "+555 666 777 888"
+      "email": "ernestoleonidas@gmail.com",
+      "phone": "+555 666 777 888",
+      "address": "Mi casa 123"
+    },
+    {
+      "id": 2,
+      "name": "Ernesto 2",
+      "lastname": "Velasquez 2",
+      "email": "ernestoleonidas@gmail.com",
+      "phone": "+555 666 777 888",
+      "address": "Mi casa 123"
+    },
+    {
+      "id": 3,
+      "name": "Joaquin",
+      "lastname": "Vasquez",
+      "phone": "651436546",
+      "email": "micorreo@asds.cl",
+      "adress": "mi casa 123"
     }
   ]
 }

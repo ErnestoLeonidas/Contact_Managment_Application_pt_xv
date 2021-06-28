@@ -3,6 +3,7 @@ import injectContext from "./store/appContext";
 import EditUser from "./views/EditUser";
 import ViewUsers from "./views/ViewUsers";
 import NewUser from "./views/NewUser";
+import Card from "./views/Card";
 
 function Layout() {
     return (
@@ -17,6 +18,9 @@ function Layout() {
                     </Route>
                     <Route exact path="/">
                         <ViewUsers />
+                    </Route>
+                    <Route exact path="/card">
+                        <Card />
                     </Route>
                 </Switch>
             </BrowserRouter>

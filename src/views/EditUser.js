@@ -30,12 +30,12 @@ const EditUser = () => {
                                     <div className="row">
                                         <div className="col-md-6">
                                             <div className="form-group">
-                                                <label htmlFor="name">Nombre</label>
+                                                <label htmlFor="name">Name</label>
                                                 <input
                                                     type="text"
                                                     id="name"
                                                     name="name"
-                                                    placeholder="Ingresar Nombre"
+                                                    placeholder="Enter name"
                                                     className="form-control mb-3"
                                                     value={!!user && user.name}
                                                     onChange={actions.handleChange}
@@ -44,37 +44,69 @@ const EditUser = () => {
                                         </div>
                                         <div className="col-md-6">
                                             <div className="form-group">
-                                                <label htmlFor="name">Apellido</label>
+                                                <label htmlFor="name">Last Name</label>
                                                 <input
                                                     type="text"
                                                     id="lastname"
                                                     name="lastname"
-                                                    placeholder="Ingresar Apellido"
+                                                    placeholder="Enter last name"
                                                     className="form-control mb-3"
                                                     value={!!user && user.lastname}
                                                     onChange={actions.handleChange}
                                                 />
                                             </div>
                                         </div>
+
                                         <div className="col-md-12">
                                             <div className="form-group">
-                                                <label htmlFor="name">Telefono</label>
+                                                <label htmlFor="name">email</label>
+                                                <input
+                                                    type="text"
+                                                    id="email"
+                                                    name="email"
+                                                    placeholder="Enter email"
+                                                    className="form-control mb-3"
+                                                    value={!!user && user.email}
+                                                    onChange={actions.handleChange}
+                                                />
+                                            </div>
+                                        </div>
+
+                                        <div className="col-md-12">
+                                            <div className="form-group">
+                                                <label htmlFor="name">Phone</label>
                                                 <input
                                                     type="text"
                                                     id="phone"
                                                     name="phone"
-                                                    placeholder="Ingresar Telefono"
+                                                    placeholder="Enter phone"
                                                     className="form-control mb-3"
                                                     value={!!user && user.phone}
                                                     onChange={actions.handleChange}
                                                 />
                                             </div>
                                         </div>
+
+                                        <div className="col-md-12">
+                                            <div className="form-group">
+                                                <label htmlFor="name">address</label>
+                                                <input
+                                                    type="text"
+                                                    id="address"
+                                                    name="address"
+                                                    placeholder="Enter address"
+                                                    className="form-control mb-3"
+                                                    value={!!user && user.address}
+                                                    onChange={actions.handleChange}
+                                                />
+                                            </div>
+                                        </div>
+
                                     </div>
                                 </div>
                                 <div className="card-footer d-flex justify-content-end">
-                                    <button className="btn btn-success mx-1">Guardar</button>
-                                    <button className="btn btn-warning mx-1" onClick={() => history.push('/')}>Regresar</button>
+                                    <button className="btn btn-success mx-1">Save</button>
+                                    <button className="btn btn-warning mx-1" onClick={() => history.push('/')}>Go back!</button>
                                 </div>
                             </div>
                         </form>
